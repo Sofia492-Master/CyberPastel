@@ -1,0 +1,139 @@
+/* ==========================================================================
+   CYBERPASTEL - ESTILO CYBERPUNK DULCE & PERSONALIZABLE
+   Autor: Valery Sofia Puerto Romero (ADSO - SENA)
+   ========================================================================== */
+
+:root {
+    --neon-cyan: #45f0ff;
+    --neon-pink: #ff6ac1;
+    --pastel-lavender: #d4c1ff;
+    --pastel-mint: #c2f0e0;
+    --pastel-cream: #fff8e8;
+    --chocolate-detail: #8b5a3c;
+    
+    --bg-gradient: linear-gradient(135deg, #f5fbfe 0%, #faf3f8 50%, #fff8e8 100%);
+    --login-bg-gradient: linear-gradient(135deg, #e8f7fc 0%, #fdeff5 100%);
+    
+    --text-dark: #2c3e50;
+    --text-muted: #6c757d;
+    
+    --card-glass: rgba(255, 255, 255, 0.90);
+    --border-glass: rgba(69, 240, 255, 0.35);
+}
+
+body {
+    font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-muted);
+    background: var(--bg-gradient);
+    min-height: 100vh;
+}
+
+/* Tipografía de Títulos (Orbitron) */
+h1, h2, h3, h4, h5, h6, .navbar-brand, .fw-bold {
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+    color: var(--text-dark);
+    letter-spacing: 0.5px;
+}
+
+/* Estilo del Logo CyberPastel o Logo Personal */
+.cyber-logo-text .text-cyber {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 10px rgba(69, 240, 255, 0.4);
+}
+
+.cyber-logo-text .text-pastel-name {
+    color: var(--neon-pink);
+    text-shadow: 0 0 10px rgba(255, 106, 193, 0.4);
+}
+
+/* Contenedor para Imagen de Logo Personalizado */
+.custom-logo-img {
+    max-height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Fondo con Imagen Personalizada para el Index */
+.hero-bg-custom {
+    /* CAMBIA 'tu-imagen-fondo.jpg' por el nombre de tu archivo de imagen en la carpeta public o raíz */
+    background: linear-gradient(rgba(44, 62, 80, 0.65), rgba(44, 62, 80, 0.65)), url('img/tu-imagen-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contenedor de Imagen de Productos (Espacio para tus fotos) */
+.product-img-placeholder {
+    height: 180px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgba(255, 106, 193, 0.3);
+    color: var(--text-muted);
+}
+
+/* Clases de Utilidad */
+.text-pink { color: var(--neon-pink) !important; }
+.text-cyan { color: var(--neon-cyan) !important; }
+.bg-light-pink { background-color: #fff0f6 !important; }
+.bg-navbar { background-color: rgba(255, 255, 255, 0.92) !important; backdrop-filter: blur(12px); border-bottom: 2px solid rgba(255, 106, 193, 0.2); }
+.bg-login-custom { background: var(--login-bg-gradient) !important; }
+
+/* Tarjetas con Efecto Acrílico / Glassmorphism */
+.card-custom {
+    border-radius: 20px;
+    border: 1px solid var(--border-glass);
+    background-color: var(--card-glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(108, 117, 125, 0.08);
+    transition: all 0.3s ease;
+}
+
+.card-custom:hover {
+    transform: translateY(-4px);
+    border-color: var(--neon-pink);
+    box-shadow: 0 15px 35px rgba(255, 106, 193, 0.2);
+}
+
+/* Botones en forma de Píldora */
+.btn-sweet {
+    background: linear-gradient(135deg, var(--neon-cyan), var(--neon-pink));
+    color: white;
+    border: none;
+    border-radius: 50rem;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 106, 193, 0.3);
+}
+
+.btn-sweet:hover {
+    transform: scale(1.03);
+    color: white;
+    box-shadow: 0 6px 20px rgba(69, 240, 255, 0.5);
+}
+
+/* Cajas de Iconos */
+.icon-box {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    font-size: 1.4rem;
+    background: linear-gradient(135deg, rgba(69, 240, 255, 0.2), rgba(255, 106, 193, 0.2));
+    color: var(--neon-pink);
+    border: 1px solid rgba(255, 106, 193, 0.3);
+}
+
+.table { color: var(--text-dark); }
+.table th {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    background-color: rgba(255, 248, 232, 0.5) !important;
+    color: var(--text-dark);
+}
